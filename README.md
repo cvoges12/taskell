@@ -5,7 +5,7 @@
 A CLI kanban board/task manager for Mac and Linux
 
 - Per project task lists
-- `vim` style key-bindings
+- colemak `vim` style key-bindings
 - Stored using Markdown
 - Clean diffs for easy version control
 - Support for sub-tasks and due dates
