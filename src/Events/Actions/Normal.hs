@@ -23,8 +23,8 @@ event (EvKey (KChar 'O') _) = (startCreate =<<) . (above  =<<) . store
 event (EvKey (KChar 'o') _) = (startCreate =<<) . (below =<<) . store
 
 -- add list
-event (EvKey (KChar 'N') _) = (createListStart =<<) . store
-event (EvKey (KChar 'E') _) = (editListStart =<<) . store
+event (EvKey (KChar 'A') _) = (createListStart =<<) . store
+event (EvKey (KChar 'S') _) = (editListStart =<<) . store
 event (EvKey (KChar 'X') _) = (write =<<) . (deleteCurrentList =<<) . store
 
 -- navigation
