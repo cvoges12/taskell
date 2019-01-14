@@ -30,10 +30,10 @@ event (EvKey (KChar 'E') _) = (editListStart =<<) . store
 event (EvKey (KChar 'X') _) = (write =<<) . (deleteCurrentList =<<) . store
 
 -- navigation
-event (EvKey (KChar 'k') _) = previous
-event (EvKey (KChar 'j') _) = next
+event (EvKey (KChar 'e') _) = previous
+event (EvKey (KChar 'n') _) = next
 event (EvKey (KChar 'h') _) = left
-event (EvKey (KChar 'l') _) = right
+event (EvKey (KChar 'i') _) = right
 event (EvKey (KChar 'G') _) = bottom
 
 -- moving items
