@@ -35,10 +35,10 @@ event (EvKey (KChar 'i') _) = right
 event (EvKey (KChar 'G') _) = bottom
 
 -- moving items
-event (EvKey (KChar 'K') _) = (write =<<) . (up =<<) . store
-event (EvKey (KChar 'J') _) = (write =<<) . (down =<<) . store
+event (EvKey (KChar 'E') _) = (write =<<) . (up =<<) . store
+event (EvKey (KChar 'N') _) = (write =<<) . (down =<<) . store
 event (EvKey (KChar 'H') _) = (write =<<) . (bottom =<<) . (left =<<) . (moveLeft =<<) . store
-event (EvKey (KChar 'L') _) = (write =<<) . (bottom =<<) . (right =<<) . (moveRight =<<) . store
+event (EvKey (KChar 'I') _) = (write =<<) . (bottom =<<) . (right =<<) . (moveRight =<<) . store
 event (EvKey (KChar ' ') _) = (write =<<) . (moveRight =<<) . store
 event (EvKey (KChar 'm') _) = showMoveTo
 
