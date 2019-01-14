@@ -43,7 +43,7 @@ event (EvKey (KChar ' ') _) = (write =<<) . (moveRight =<<) . store
 event (EvKey (KChar 'm') _) = showMoveTo
 
 -- removing items
-event (EvKey (KChar 'D') _) = (write =<<) . (delete =<<) . store
+event (EvKey (KChar 'x') _) = (write =<<) . (delete =<<) . store
 
 -- undo
 event (EvKey (KChar 'u') _) = (write =<<) . undo
