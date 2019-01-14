@@ -46,7 +46,7 @@ event (EvKey (KChar 'm') _) = showMoveTo
 event (EvKey (KChar 'x') _) = (write =<<) . (delete =<<) . store
 
 -- undo
-event (EvKey (KChar 'u') _) = (write =<<) . undo
+event (EvKey (KChar 'z') _) = (write =<<) . undo
 
 -- moving lists
 event (EvKey (KChar '>') _) = (write =<<) . (listRight =<<) . store
