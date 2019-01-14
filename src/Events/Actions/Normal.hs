@@ -16,10 +16,8 @@ event :: Event -> Stateful
 event (EvKey (KChar 'q') _) = quit
 
 -- add/edit
-event (EvKey (KChar 'e') _) = (startEdit =<<) . store
-event (EvKey (KChar 'A') _) = (startEdit =<<) . store
-event (EvKey (KChar 'i') _) = (startEdit =<<) . store
-event (EvKey (KChar 'C') _) = (startEdit =<<) . (clearItem =<<) . store
+event (EvKey (KChar 's') _) = (startEdit =<<) . store
+event (EvKey (KChar 'w') _) = (startEdit =<<) . (clearItem =<<) . store
 event (EvKey (KChar 'a') _) = (startCreate =<<) . (newItem =<<) . store
 event (EvKey (KChar 'O') _) = (startCreate =<<) . (above  =<<) . store
 event (EvKey (KChar 'o') _) = (startCreate =<<) . (below =<<) . store
